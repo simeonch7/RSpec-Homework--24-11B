@@ -4,7 +4,6 @@ require(File.expand_path('../lib/rome_converter.rb', File.dirname(__FILE__)))
 #include RSpec
 
 
-
 RSpec.describe  do
 
   describe "convert_to_rome" do
@@ -12,9 +11,7 @@ RSpec.describe  do
       @converter = RomeConverter.new()
     end
 
-
     #Section for rome -> arab
-
     it "gets I and returns 1" do
       expect(@converter.to_dec("I")).to eq 1
     end
@@ -63,9 +60,7 @@ RSpec.describe  do
       expect(@converter.to_dec("MMMCMXCIX")).to eq 3999
     end
     
-    
     #Section for rome <- arab
-    
     it "gets 0 and returns emty string" do
       expect(@converter.to_rome(0)).to eq ""
     end
@@ -109,7 +104,5 @@ RSpec.describe  do
     it "gets 3999 and returns MMMCMXCIX" do
       expect(@converter.to_rome(3999)).to eq "MMMCMXCIX"
     end
-
   end
-
 end
