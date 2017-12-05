@@ -97,7 +97,7 @@ RSpec.describe  do
       expect(@converter.to_rome(3030)).to eq "MMMXXX"
     end
     
-		it "gets 3789 and returns MMMDCCLXXXIX" do
+it "gets 3789 and returns MMMDCCLXXXIX" do
       expect(@converter.to_rome(3789)).to eq "MMMDCCLXXXIX"
     end
     
